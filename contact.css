@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: 100vh;
+}
+
+
+.nav{
+    background: rgb(211, 114, 114);
+    box-shadow: 0px -7px 19px 14px rgba(0,0,0,0.42);
+-webkit-box-shadow: 0px -7px 19px 14px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px -7px 19px 14px rgba(0,0,0,0.42);
+    
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    margin-left: 35px;
+    font-size: 35px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 300ms;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+#inicio{
+    background-color: rgba(131, 131, 131, 0.329);
+}
+
+.links a:hover{
+    background-color: rgba(131, 131, 131, 0.329);
+    transition: 300ms;
+}
+
+.links{
+    margin: 0 24px;
+}
+
+.nav__menu{
+    list-style: none;
+    display: flex;
+    
+}
+
+#btn{
+    display: none;
+    margin-right: 24px;
+    
+}
+
+ul.show{
+    z-index: 2;
+    top: 70px;
+    height: 100vh;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@media (max-width:800px){
+    #btn{
+        display: inline-block;
+    }
+    
+    .nav__menu{
+        position: fixed;
+        width: 100vw;
+        height: calc(100%-70px);
+        background-color: rgb(151, 82, 82);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+
+    }
+
+    .nav__menu li{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+}
+
+.main{
+    
+    height: calc(100% - 70px);
+    background: rgb(210,100,100);
+    background: linear-gradient(180deg, rgba(210,100,100,1) 0%, rgba(226,152,148,1) 38%, rgba(180,144,139,1) 72%);
+}
+
+.contenido{
+    width: 60%;
+    margin: auto;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contact__content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+footer{
+    height: 70px;
+    background-color: rgba(214, 104, 104, 0.226);
+    width: 100%;
+}
+
+.footer__container{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 100%;
+    font-size: 12px;
+}
+
+.footer__container-left{
+    
+    align-items: center;
+    
+}

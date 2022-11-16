@@ -11,19 +11,22 @@ btn.addEventListener('click', function(){
 
 acerca.addEventListener('click', function(){
     window.scrollTo(0,2000);
-    menu.classList.toggle("show");
     
+    
+    if(innerWidth<=800){
+        menu.classList.toggle("show");
+    }
 })
 
 servicios.addEventListener('click', function(){
-    if(window.screen.width >= 1400){
+    if(innerWidth >= 1400){
         window.scrollTo(0,850);
-    }else if(window.screen.width>= 980){
+    }else if(innerWidth>= 980){
         window.scrollTo(0,750);
-    }else if(window.screen.width>300){
+    }else if(innerWidth>300){
         window.scrollTo(0,500)
     }
-    if(window.screen.width<=800){
+    if(innerWidth<=800){
         menu.classList.toggle("show");
     }
     
