@@ -112,19 +112,21 @@ ul.show{
 }
 
 .contenido{
-    width: 60%;
+    width: 80%;
     margin: auto;
     height: calc(100% - 70px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 
 }
 
 .contact__content{
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
 }
 
 
