@@ -48,7 +48,7 @@ body{
     border-radius: 6px;
 }
 
-#inicio{
+#contacto{
     background-color: rgba(131, 131, 131, 0.329);
 }
 
@@ -118,16 +118,20 @@ ul.show{
 /*    height: calc(100% - 70px); */
     display: flex;
     flex-direction: column;
-  
+    
 }
 
 .contact__content{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
-    border: 1px solid black;
-   
+    gap: 90px;
+}
+.contact__content h1{
+    text-transform: uppercase;
+    font-size: 60px
 }
 
 .input__content-data{
@@ -157,9 +161,20 @@ input {
     padding: 20px 10px;
     background-color: #f8b1b1;
     border-radius: 6px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 input::placeholder{
+    color: black;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea::placeholder{
     color: black;
 }
 
